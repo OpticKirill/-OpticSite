@@ -475,10 +475,15 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .bat-nav-button {
-        display: block;
+    .project-navigation {
         width: 100%;
-        margin-bottom: 10px;
+        box-sizing: border-box; /* Предотвращает выход за пределы ширины экрана */
+    }
+
+    .project-nav-button {
+        display: block;
+        width: calc(100% - 20px); /* Вычетает внешние отступы */
+        margin: 10px auto; /* Автоматические отступы для центрирования */
     }
 }
 
